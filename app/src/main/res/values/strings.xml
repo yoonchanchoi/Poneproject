@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Poneproject</string>
+    <string name="myAppName">"연락처"</string>
+    <string name="myAppName2">"최근기록"</string>
+</resources>

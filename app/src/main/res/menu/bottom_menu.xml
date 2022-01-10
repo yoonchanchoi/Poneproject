@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_list"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_numberlist_24"
+        android:title="전화부"/>
+
+    <item
+        android:id="@+id/action_call"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_add_ic_call_24"
+        android:title="전화"/>
+
+    <item
+        android:id="@+id/action_recent"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_recent_24"
+        android:title="최근전화"/>
+
+</menu>
