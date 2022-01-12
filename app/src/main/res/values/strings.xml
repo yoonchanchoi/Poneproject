@@ -2,4 +2,6 @@
     <string name="app_name">Poneproject</string>
     <string name="myAppName">"연락처"</string>
     <string name="myAppName2">"최근기록"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

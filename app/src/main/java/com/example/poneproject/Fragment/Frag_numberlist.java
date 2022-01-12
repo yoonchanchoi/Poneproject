@@ -1,4 +1,4 @@
-package com.example.poneproject;
+package com.example.poneproject.Fragment;
 
 import android.app.ActionBar;
 import android.os.Bundle;
@@ -14,10 +14,24 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.poneproject.DataModel.Numberlist_Adapter;
+import com.example.poneproject.DataModel.Numberlist_Data;
+import com.example.poneproject.MainActivity;
+import com.example.poneproject.R;
+
+import java.util.ArrayList;
 
 public class Frag_numberlist extends Fragment {
 
     private View view;
+
+    private ArrayList<Numberlist_Data> arrayList;
+    private Numberlist_Adapter numberlist_adapter;
+    private RecyclerView recyclerView;
+    private LinearLayoutManager linearLayoutManager;
 
 
     @Nullable
@@ -29,6 +43,17 @@ public class Frag_numberlist extends Fragment {
         toolbar.setTitle(R.string.myAppName);
         MainActivity activity = (MainActivity) getActivity();
         activity.setSupportActionBar(toolbar);
+
+        recyclerView= (RecyclerView)view.findViewById(R.id.rv);
+        linearLayoutManager=new LinearLayoutManager(this.getActivity());
+        recyclerView.setLayoutManager(linearLayoutManager);
+
+        arrayList = new ArrayList<>();
+        numberlist_adapter = new Numberlist_Adapter(arrayList);
+        recyclerView.setAdapter(numberlist_adapter);
+
+
+
         return view;
     }
 
