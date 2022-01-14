@@ -35,6 +35,7 @@ public class Numberlist_Adapter extends RecyclerView.Adapter<Numberlist_Adapter.
     public void onBindViewHolder(@NonNull Numberlist_Adapter.CustomViewHolder holder, int position) {
         holder.iv_profile.setImageResource(arrayList.get(position).getIv_profile());
         holder.numberlist_name.setText(arrayList.get(position).getNumberlist_name());
+        holder.numberlist_ponumber.setText(arrayList.get(position).getNumberList_ponumber());
 
         holder.itemView.setTag(position);
 
@@ -57,7 +58,7 @@ public class Numberlist_Adapter extends RecyclerView.Adapter<Numberlist_Adapter.
 
     @Override
     public int getItemCount() {
-        return (null != arrayList ? arrayList.size() : 0)
+        return (null != arrayList ? arrayList.size() : 0);
 
     }
     public void remove(int position){
@@ -73,11 +74,13 @@ public class Numberlist_Adapter extends RecyclerView.Adapter<Numberlist_Adapter.
     public class CustomViewHolder extends RecyclerView.ViewHolder{
         protected ImageView iv_profile;
         protected TextView numberlist_name;
+        protected TextView numberlist_ponumber;
 
         public CustomViewHolder(@NonNull View itemView) {
             super(itemView);
             this.iv_profile = (ImageView) itemView.findViewById(R.id.iv_profile);
             this.numberlist_name = (TextView) itemView.findViewById(R.id.numberlist_name);
+            this.numberlist_ponumber = (TextView) itemView.findViewById(R.id.numberlist_ponumber);
         }
     }
 }

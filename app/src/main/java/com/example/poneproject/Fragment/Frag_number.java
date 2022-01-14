@@ -24,6 +24,8 @@ public class Frag_number extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.frag_number, container, false);
+
+
 //        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
 //        toolbar.setTitle(R.string.myAppName);
 //        setSupportActionBar(toolbar);

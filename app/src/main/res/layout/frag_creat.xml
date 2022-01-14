@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/creat_frag"
     tools:context=".Fragment.Frag_creat">
 
 
@@ -22,7 +23,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/ed_name"
+        app:layout_constraintBottom_toTopOf="@id/et_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="275dp"
@@ -30,7 +31,7 @@
         android:text="이름"/>
 
     <EditText
-        android:id="@+id/ed_name"
+        android:id="@+id/et_name"
         android:background="@drawable/personcreate_et_text"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -46,7 +47,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/ed_ponumber"
+        app:layout_constraintBottom_toTopOf="@id/et_ponumber"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="250dp"
@@ -54,13 +55,13 @@
         android:text="전화번호"/>
 
     <EditText
-        android:id="@+id/ed_ponumber"
+        android:id="@+id/et_ponumber"
         android:background="@drawable/personcreate_et_text"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ed_name"
+        app:layout_constraintTop_toBottomOf="@id/et_name"
         android:layout_marginTop="100dp"
         android:paddingLeft="15dp"
         android:gravity="left"
@@ -72,7 +73,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ed_ponumber"
+        app:layout_constraintTop_toBottomOf="@id/et_ponumber"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginTop="150dp"
